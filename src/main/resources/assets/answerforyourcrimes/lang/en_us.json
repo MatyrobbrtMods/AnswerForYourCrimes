@@ -1,0 +1,19 @@
+{
+  "punishment.answerforyourcrimes.murder_friendly": "murder a friendly animal",
+  "punishment.answerforyourcrimes.enderman_anger": "anger endermen",
+  "punishment.answerforyourcrimes.using_shield": "use a shield",
+  "punishment.answerforyourcrimes.using_chain_armor": "use chain armor",
+  "punishment.answerforyourcrimes.changing_dimensions": "change dimensions",
+
+  "answerforyourcrimes.not_getting_away": "You thought we wouldn't notice...",
+
+  "answerforyourcrimes.notice_0": "Who said you could %s?",
+  "answerforyourcrimes.notice_1": "I don't remember allowing you to %s",
+  "answerforyourcrimes.notice_2": "How dare you %s? Do it again, and your punishment will only get worse.",
+  "answerforyourcrimes.notice_0_warned": "And yet... you did it again. Do NOT %s!",
+  "answerforyourcrimes.notice_1_warned": "Huh... they never learn... I still don't remember allowing you to %s",
+  "answerforyourcrimes.notice_2_warned": "Just stop! Why do I need to tell you again not to %s?",
+
+  "death.attack.answerforyourcrimes.karma.player": "%1$s was killed as a result of their own crimes...",
+  "answerforyourcrimes.forgiveness": "Thou hast render’d the utmost oblation… Thy soul hath shrivel’d into shadow and dust. The Gods, in fleeting mercy, do grant thee pardon for thy transgressions... Yet mark this well: their temper is swift to sour, and their grace doth wane with haste."
+}
