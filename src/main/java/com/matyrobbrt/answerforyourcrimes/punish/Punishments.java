@@ -4,6 +4,8 @@ import com.matyrobbrt.answerforyourcrimes.AnswerForYourCrimes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterials;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +13,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.function.IntUnaryOperator;
+import java.util.stream.StreamSupport;
 
 public class Punishments {
     private static final ScheduledExecutorService EXECUTOR = Executors.newScheduledThreadPool(1, Thread.ofVirtual().factory());
@@ -25,6 +28,10 @@ public class Punishments {
 
     public void punish(ResourceLocation crime, ServerPlayer player, float chance) {
         if (player.getRandom().nextFloat() > chance) {
+            return;
+        }
+        if (StreamSupport.stream(player.getArmorSlots().spliterator(), false)
+                .allMatch(s -> !s.isEmpty() && s.getItem() instanceof ArmorItem ai && ai.getMaterial().is(ArmorMaterials.LEATHER))) {
             return;
         }
 
