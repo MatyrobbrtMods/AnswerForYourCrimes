@@ -4,6 +4,11 @@
   "punishment.answerforyourcrimes.using_shield": "use a shield",
   "punishment.answerforyourcrimes.using_chain_armor": "use chain armor",
   "punishment.answerforyourcrimes.changing_dimensions": "change dimensions",
+  "punishment.answerforyourcrimes.drop_item": "drop items",
+  "punishment.answerforyourcrimes.mounting": "mount an entity",
+  "punishment.answerforyourcrimes.brew_potion": "brew potions",
+  "punishment.answerforyourcrimes.struck_by_lightning": "struck by lightning",
+  "punishment.answerforyourcrimes.fist_break": "break blocks using your fist",
 
   "answerforyourcrimes.not_getting_away": "You thought we wouldn't notice...",
 

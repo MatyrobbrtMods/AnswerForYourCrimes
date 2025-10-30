@@ -3,6 +3,7 @@ package com.matyrobbrt.answerforyourcrimes;
 import com.matyrobbrt.answerforyourcrimes.punish.EffectPunishment;
 import com.matyrobbrt.answerforyourcrimes.punish.HarmPunishment;
 import com.matyrobbrt.answerforyourcrimes.punish.KillPunishment;
+import com.matyrobbrt.answerforyourcrimes.punish.LightningPunishment;
 import com.matyrobbrt.answerforyourcrimes.punish.MobSpawnPunishment;
 import com.matyrobbrt.answerforyourcrimes.punish.Punishments;
 import com.mojang.serialization.Codec;
@@ -40,6 +41,7 @@ public class AnswerForYourCrimes {
     public static final Punishments PUNISHMENTS = new Punishments.Builder()
             .delayChance(0.13f)
             .add(i -> Math.max(0, i - 1) * 2, new KillPunishment())
+            .add(5, new LightningPunishment())
             .add(15, new HarmPunishment())
             .add(10, new MobSpawnPunishment(List.of(
                     EntityType.BLAZE,
